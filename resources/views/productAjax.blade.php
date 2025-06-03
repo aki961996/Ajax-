@@ -165,7 +165,7 @@
      
         var id = $(this).data("id");
         confirm("Are You sure want to delete this Product!");
-      
+      console.log(id, 'this is get back id and check to this work flow')
         $.ajax({
             type: "DELETE",
             url: "{{ route('products.store') }}"+'/'+id,
